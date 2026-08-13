@@ -1,0 +1,17 @@
+Getting help
+============
+
+Use `GitHub Issues <https://github.com/seeq12/seeq-add-on-asset-tree-renamer/issues>`_ for bugs and feature requests.
+
+Include:
+
+* Add-on version.
+* Seeq and SPy versions.
+* Target item type.
+* Whether the tree is global or workbook-scoped.
+* Redacted preview summary, error code, and recovery message.
+* Reproduction steps using non-sensitive names where possible.
+
+Do not include credentials, authentication headers, customer-sensitive tree exports, private profile files, or unredacted screenshots.
+
+This Add-on is maintained by a member of the Seeq Analytics Engineering team. Feature requests and bugs are handled through GitHub.

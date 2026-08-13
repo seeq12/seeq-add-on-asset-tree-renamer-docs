@@ -1,0 +1,33 @@
+User guide
+==========
+
+Prepare
+-------
+
+Have the following information ready:
+
+* Root Asset Tree UUID.
+* Exact current item name.
+* Intended new item name.
+* Optional workbook scope when the tree is workbook-scoped.
+
+Preview the rename
+------------------
+
+1. Enter the root UUID, current name, and new name.
+2. Select **Preview Rename**.
+3. If multiple items share the current name, select the exact resolved path.
+4. Review the item type, old and proposed paths, structural impact, descendant count, formula or roll-up rewrites, warnings, and conflicts.
+
+The preview is invalidated when the inputs change. Run it again before submitting.
+
+Submit and verify
+-----------------
+
+1. Confirm that the preview identifies the intended item and impact.
+2. Select the explicit confirmation control.
+3. Select **Rename Item**.
+4. Wait for the fresh-tree verification result.
+5. Copy the summary when an audit or change record is required.
+
+If submission fails, the add-on attempts a best-effort rollback and reports the outcome. Do not retry blindly after an ambiguous failure; inspect the tree and technical details first.

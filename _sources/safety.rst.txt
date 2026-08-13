@@ -1,0 +1,29 @@
+Safety and limitations
+======================
+
+Safety controls
+---------------
+
+* Preview and confirmation are required before submission.
+* Duplicate-name targets require explicit path selection.
+* Exact path and same-parent name conflicts are blocked.
+* Adjacent identical asset path segments are blocked.
+* A changed tree invalidates the reviewed plan.
+* Missing stable item IDs block reference updates.
+* Push results must include successful per-row status.
+* Failed submissions trigger a best-effort rollback.
+* Success requires a fresh tree read with no detected broken exposed references.
+
+Known limitations
+-----------------
+
+* Renaming the root asset is intentionally blocked.
+* Rollback cannot guarantee recovery from every transport, permission, or partial-write failure.
+* Only references represented in the pulled asset-tree metadata can be inspected and rewritten.
+* External systems, scripts, notebooks, exports, or manually embedded text may still refer to the old path.
+* Live compatibility must be verified on the intended Seeq and SPy versions.
+
+Production use
+--------------
+
+Use normal backup, approval, and change-management controls for production trees. Start with a representative development fixture, retain the preview summary, and verify downstream consumers after the rename.

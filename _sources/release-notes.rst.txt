@@ -1,0 +1,28 @@
+Release notes
+=============
+
+0.8.0 - deployment-readiness candidate
+---------------------------------------
+
+* Added public documentation and in-product help-link support.
+* Added canonical root ``addon.json`` release metadata.
+* Added Apache 2.0 licensing, contribution, security, and support guidance.
+* Added repeatable package, release-validation, and static-contract generation scripts.
+* Added CI and GitHub Pages workflows.
+* Added an explicit SPy compatibility setting.
+* Preserved v0.7.0 rename planning, submission, rollback, verification, and UI workflow behavior.
+
+0.7.0
+-----
+
+* Focused the initial UI and centered preview loading in the evidence rail.
+
+0.6.1
+-----
+
+* Added type-aware preview and conflict handling.
+
+Earlier releases
+----------------
+
+Versions 0.1.0 through 0.6.0 established the notebook AddOnTool, staged preview and rename workflow, structural impact reporting, reference rewriting, rollback handling, verification, and single-workspace UI.

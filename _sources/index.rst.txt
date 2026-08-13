@@ -1,0 +1,19 @@
+Asset Tree Item Renamer
+=======================
+
+Asset Tree Item Renamer provides a guided, safety-focused workflow for renaming items in legacy Seeq asset trees.
+
+.. warning::
+
+   This add-on changes Seeq metadata. Always review the resolved path, affected references, warnings, and confirmation gate before submitting a production rename.
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents
+
+   introduction
+   installation
+   user-guide
+   safety
+   release-notes
+   getting-help

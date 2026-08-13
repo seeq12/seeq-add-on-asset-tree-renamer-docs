@@ -1,0 +1,19 @@
+Introduction
+============
+
+Asset Tree Item Renamer helps Seeq administrators rename an Asset, Signal, Condition, Scalar, or other supported item while preserving relevant tree metadata and exposed path-based references.
+
+The workflow is deliberately staged:
+
+1. Define the root tree and requested name change.
+2. Preview the resolved target, structural impact, conflicts, and reference rewrites.
+3. Confirm the reviewed change.
+4. Submit the metadata update.
+5. Pull the tree again and verify the result.
+
+The add-on blocks ambiguous duplicate names until a path is selected, exact-path and same-parent conflicts, adjacent duplicate path segments, missing stable item identifiers, stale previews, and unsupported root-tree renames.
+
+Audience
+--------
+
+This is an administrative utility for users who understand the affected asset tree and have permission to update every item included in the rename plan.

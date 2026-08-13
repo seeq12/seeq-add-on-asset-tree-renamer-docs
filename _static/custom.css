@@ -1,0 +1,18 @@
+:root {
+  --atr-maroon: #5c0017;
+  --atr-deep-teal: #03445d;
+  --atr-cream: #faf8f1;
+}
+
+.wy-side-nav-search,
+.wy-nav-top {
+  background: var(--atr-maroon);
+}
+
+.wy-nav-content-wrap {
+  background: var(--atr-cream);
+}
+
+a {
+  color: var(--atr-deep-teal);
+}

@@ -1,0 +1,26 @@
+Installation
+============
+
+Prerequisites
+-------------
+
+* Seeq Add-on Manager is installed and visible to the installer.
+* The target Data Lab environment provides the ``python311`` kernel.
+* The intended access identities are known before installation.
+* The release package has passed static validation and has an approved checksum.
+
+Install through Add-on Manager
+------------------------------
+
+1. Obtain the approved versioned ``asset-tree-renamer-addon-vX.Y.Z.addon`` file.
+2. Use Add-on Manager to upload and install the package.
+3. Supply the intended access identities explicitly. An omitted identity list is not an access-preservation strategy.
+4. Confirm that Add-on Manager reports the expected identifier and version.
+5. Launch **Asset Tree Item Renamer** from its configured Seeq surface.
+
+The package must be installed and updated through Add-on Manager. Direct notebook upload is a development convenience and does not prove a managed release.
+
+Post-installation verification
+------------------------------
+
+Before broad use, exercise the add-on on a reversible development fixture and confirm preview, confirmation, submit, verification, reset, error, and narrow-width states. Record package-bound Add-on Manager readback and the installed notebook launch URL.
