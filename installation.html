@@ -51,7 +51,9 @@
 </li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#install-through-add-on-manager">Install through Add-on Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#install-from-add-on-manager">Install from Add-on Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#update-an-existing-installation">Update an existing installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#internal-quality-assurance-or-one-off-installation">Internal Quality Assurance or one-off installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#post-installation-verification">Post-installation verification</a></li>
 </ul>
 </li>
@@ -106,26 +108,56 @@
 <section id="prerequisites">
 <h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading"></a></h2>
 <ul class="simple">
-<li><p>Seeq Add-on Manager is installed and visible to the installer.</p></li>
+<li><p>Seeq Add-on Manager is installed and visible to a Seeq administrator.</p></li>
 <li><p>The target Data Lab environment provides the <code class="docutils literal notranslate"><span class="pre">python311</span></code> kernel.</p></li>
 <li><p>The intended access identities are known before installation.</p></li>
-<li><p>The release package has passed static validation and has an approved checksum.</p></li>
 </ul>
 </section>
-<section id="install-through-add-on-manager">
-<h2>Install through Add-on Manager<a class="headerlink" href="#install-through-add-on-manager" title="Link to this heading"></a></h2>
+<section id="install-from-add-on-manager">
+<h2>Install from Add-on Manager<a class="headerlink" href="#install-from-add-on-manager" title="Link to this heading"></a></h2>
+<p><strong>Asset Tree Item Renamer</strong> can be installed from Add-on Manager by a Seeq
+administrator once it has been released to the AE-developed add-on gallery.</p>
 <ol class="arabic simple">
-<li><p>Obtain the approved versioned <code class="docutils literal notranslate"><span class="pre">asset-tree-renamer-addon-vX.Y.Z.addon</span></code> file.</p></li>
+<li><p>From the Seeq Home Screen, open <strong>Add-ons</strong> and launch <strong>Add-on Manager</strong>.</p></li>
+<li><p>Locate <strong>Asset Tree Item Renamer</strong> in the gallery.</p></li>
+<li><p>Review the available version and select the intended users or groups.</p></li>
+<li><p>Install the add-on.</p></li>
+<li><p>Confirm that it is available from the Home Screen <strong>Add-ons</strong> menu for users who were granted access.</p></li>
+</ol>
+<p>If <strong>Asset Tree Item Renamer</strong> does not appear in Add-on Manager, contact your
+Seeq account team. Access to the AE-developed add-on gallery may need to be
+configured for your Seeq environment.</p>
+</section>
+<section id="update-an-existing-installation">
+<h2>Update an existing installation<a class="headerlink" href="#update-an-existing-installation" title="Link to this heading"></a></h2>
+<p>Use Add-on Manager to update an existing installation. Keep the current access
+identities unless an access change is intentional, preserve the installed
+configuration, and confirm that Add-on Manager reports the expected version
+after the update. Do not replace the managed Data Lab project or notebook
+directly.</p>
+</section>
+<section id="internal-quality-assurance-or-one-off-installation">
+<h2>Internal Quality Assurance or one-off installation<a class="headerlink" href="#internal-quality-assurance-or-one-off-installation" title="Link to this heading"></a></h2>
+<p>Before gallery publication, an administrator may install an approved release
+candidate manually:</p>
+<ol class="arabic simple">
+<li><p>Obtain the approved versioned <code class="docutils literal notranslate"><span class="pre">asset-tree-renamer-addon-vX.Y.Z.addon</span></code> file and its checksum.</p></li>
 <li><p>Use Add-on Manager to upload and install the package.</p></li>
 <li><p>Supply the intended access identities explicitly. An omitted identity list is not an access-preservation strategy.</p></li>
 <li><p>Confirm that Add-on Manager reports the expected identifier and version.</p></li>
-<li><p>Launch <strong>Asset Tree Item Renamer</strong> from its configured Seeq surface.</p></li>
+<li><p>Launch <strong>Asset Tree Item Renamer</strong> from the Home Screen <strong>Add-ons</strong> menu.</p></li>
 </ol>
-<p>The package must be installed and updated through Add-on Manager. Direct notebook upload is a development convenience and does not prove a managed release.</p>
+<p>The package must be installed and updated through Add-on Manager. Direct
+notebook upload is a development convenience and does not prove a managed
+release.</p>
 </section>
 <section id="post-installation-verification">
 <h2>Post-installation verification<a class="headerlink" href="#post-installation-verification" title="Link to this heading"></a></h2>
-<p>Before broad use, exercise the add-on on a reversible development fixture and confirm preview, confirmation, submit, verification, reset, error, and narrow-width states. Record package-bound Add-on Manager readback and the installed notebook launch URL.</p>
+<p>Before broad use, exercise the add-on on a reversible development fixture and
+confirm preview, explicit confirmation, submit, fresh-read verification, reset,
+an expected blocked or error state, and narrow-width rendering. Confirm the
+installed version and access in Add-on Manager, then verify the Home Screen
+launch.</p>
 </section>
 </section>
 
